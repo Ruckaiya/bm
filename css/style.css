@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 /* reset */
 html,
 body,
@@ -209,7 +204,8 @@ body {
 
 .video-w3l {
     padding: 0;
-    background: rgba(0, 0, 0, 0.28);
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
     min-height: 1200px;
     display: grid;
 }
