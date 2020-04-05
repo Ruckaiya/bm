@@ -1,0 +1,119 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <title>Effective Login Form Responsive Widget Template :: w3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords"
+        content="Effective Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- //web-fonts -->
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 2500px;
+        }
+
+        .video-background {
+            height: 100vh;
+            position: relative;
+            margin: 0 !important;
+            top: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        video {
+            margin: auto;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transform: translate(0%, 0%);
+            width: 100%;
+            /* height: auto; */
+        }
+
+        #mute {
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            border: 1px solid #000;
+            background-size: cover;
+        }
+    </style>
+    <div class="video-background">
+        <video id="player" preload="none" poster="video/big-buck-bunny.jpg" autoplay="autoplay" loop="loop">
+            <source src="video/bm.mp4" type="video/mp4">
+            <source src="https://georgepaterson.github.io/jquery-videobackground/video/big-buck-bunny.webm"
+                type="video/webm">
+            <source src="https://georgepaterson.github.io/jquery-videobackground/video/big-buck-bunny.ogv"
+                type="video/ogg">
+        </video>
+        <div id="mute" class="btn"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            if ($("video").prop('muted', false)) {
+                $("#mute").css("background-image", "url(http://image.flaticon.com/icons/svg/10/10430.svg)");
+            }
+
+            $("#mute").click(function () {
+                if ($("video").prop('muted')) {
+                    $("video").prop('muted', false);
+                    $("#mute").css("background-image",
+                        "url(http://image.flaticon.com/icons/svg/10/10430.svg)");
+                } else {
+                    $("video").prop('muted', true);
+                    $("#mute").css("background-image",
+                        "url(http://image.flaticon.com/icons/svg/10/10776.svg)");
+                }
+            });
+        });
+    </script>
+
+</html>
